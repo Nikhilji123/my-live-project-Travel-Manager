@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./travel.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body id="top">
+
+<header class="header" data-header>
+    <div class="container">
+        <a href="home.html">
+            <h1 class="logo">Tourest</h1>
+        </a>
+
+        <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+            <ion-icon name="menu-outline" class="open"></ion-icon>
+            <ion-icon name="close-outline" class="close"></ion-icon>
+        </button>
+
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <li>
+                    <a href="home.html" class="navbar-link">Home</a>
+                </li>
+                <li>
+                    <a href="destination.html" class="navbar-link">Destinations</a>
+                </li>
+                <li>
+                    <a href="Tours.html" class="navbar-link">Tours</a>
+                </li>
+                <li>
+                    <a href="Blog.html" class="navbar-link">Blog</a>
+                </li>
+                <li>
+                    <a href="about.html" class="navbar-link">About Us</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="navbar-link">Contact Us</a>
+                </li>
+            </ul>
+            <a href="booking.html" class="btn btn-secondary">Booking Now</a>
+        </nav>
+    </div>
+</header>
+
+<section class="section contact">
+    <div class="container">
+        <p class="section-subtitle">Contact Us</p>
+        <ul class="destination-list">
+            <li class="w-50">
+                <div class="container">
+                    <form action="process_contact.php" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        
+                        <button> 
+                            <a href="contactsubmit.html" class="btn btn-secondary">submit</a>
+                        </button>
+                    </form>
+                </div>
+                
+                <address class="contact-address">
+                    <h3>Nikhil Varshney</h3>
+                    <h3>Chandigarh University</h3>
+                    <p>Chandigarh University gharua</p>
+                    <p>Mohali, Punjab</p>
+                    <p>Email: <a href="mailto:travelmanager@gmail.com">travelmanager@gmail.com</a></p>
+                    <p>Phone: <a href="tel:+1234567890">8864924973</a></p>
+                </address>
+            </li>
+            
+            <li class="w-50">
+                <figure class="about-banner">
+                    <img src="D:\Downloads\contact.avif" width="200" height="200" loading="lazy" alt="" class="w-100">
+                </figure>
+            </li>
+        </ul>
+    </div>
+</section>
+
+</body>
+</html>
